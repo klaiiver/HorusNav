@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Login Now">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Hórus Map</title>
+    {% load static %}
+    <link rel="stylesheet" href={% static "css/nicepage.css" %}>
+    <link rel="stylesheet" href={% static "css/Home-3.css" %}>
+    <script class="u-script" type="text/javascript" src="jquery-1.9.1.min.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.9.1, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gruppo:400|NTR:400">
+
+
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#5710b3">
+    <meta property="og:title" content="Home 3">
+    <meta property="og:type" content="website">
+  </head>
+  <body data-home-page="https://website1813662.nicepage.io/Home-3.html?version=847f3bd6-041d-43ca-b952-6076f4ef4250" data-home-page-title="Home 3" class="u-body u-xl-mode"><header class="u-clearfix u-custom-color-1 u-header u-header" id="sec-0e5e"><div class="u-clearfix u-sheet u-sheet-1"></div></header>
+    <section class="u-align-center u-clearfix u-custom-color-1 u-section-1" id="sec-ff23">
+      <img class="u-expanded-width u-image u-image-1" data-image-width="1280" data-image-height="503">
+      <div class="u-container-style u-group u-radius-50 u-shape-round u-white u-group-1">
+        <div class="u-container-layout u-container-layout-1"><span class="u-border-8 u-border-white u-icon u-icon-circle u-spacing-0 u-icon-1"></span>
+          <h2 class="u-align-center u-custom-font u-text u-text-custom-color-1 u-text-default u-text-1">HÓRUS MAP</h2>
+          <div class="u-image u-image-circle u-preserve-proportions u-image-2" alt="" data-image-width="400" data-image-height="400"></div>
+          <div class="u-form u-login-control u-form-1">
+            <form action="salvar_form" method="POST" class="u-clearfix u-form-custom-backend u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 50px;">
+              {% csrf_token %}
+              <div class="u-form-group u-form-name u-label-top">
+                <label for="id_nome" class="u-custom-font u-label u-text-font u-text-grey-30 u-label-1">Usuário *</label>
+                <input type="text" placeholder="Entre com seu nome" id="id_nome" name="nome" class="u-border-10 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-50 u-input-1" required="required" value="{{Form_usuarios}}">
+              </div>
+              <div class="u-form-group u-form-password u-label-top">
+                <label for="id_dest" class="u-custom-font u-label u-text-font u-text-grey-30 u-label-2">Destino *</label>
+                <input type="text" placeholder="Entre com seu destino" id="id_dest" name="dest" class="u-border-10 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-radius-50 u-input-2" required="required" value="{{Form_usuarios}}">
+              </div>
+              <div class="u-align-right u-form-group u-form-submit u-label-top">
+                <input type="submit" value="ENVIAR" class="u-active-palette-1-base u-border-none u-btn u-btn-round u-btn-submit u-button-style u-custom-color-1 u-hover-palette-1-base u-radius-50 u-btn-1">
+
+              </div>
+              <input type="hidden" value="" name="recaptchaResponse">
+              <input type="hidden" id="siteId" name="siteId" value="1813662">
+              <input type="hidden" id="pageId" name="pageId" value="1813777">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-1bcc"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-align-right u-custom-font u-small-text u-text u-text-variant u-text-1">DESENVOLVIDO POR DIONATA KLAIVER</p>
+      </div></footer>
+  </body>
+</html>

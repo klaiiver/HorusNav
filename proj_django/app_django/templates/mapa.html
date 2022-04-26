@@ -1,0 +1,27 @@
+<!DOCTYPE html>{% load static %}
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Mapa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.12.0/css/ol.css">
+
+
+
+    <link rel="stylesheet" href={% static "css/map.css" %} >
+  </head>
+  <body>
+    <div id='map'>
+    </div>
+
+  <script type="text/javascript">
+  const token = '{{csrf_token}}'
+
+  var id_usuario = {{id}}
+
+  </script>
+  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.12.0/build/ol.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src={% static "js/map.js" %}>
+  </script>
+  </body>
+</html>
