@@ -7,7 +7,7 @@ from django.contrib.gis.geos import Point
 from django.db import connection
 import googlemaps
 
-gmaps = googlemaps.Client(key='AIzaSyC01fjY8uQK4a4OAav-QnA934OEUtZ4M-Y')
+gmaps = googlemaps.Client(key='######')
 def SelecionaInicio():
     with connection.cursor() as cursor:
         cursor.execute("SELECT osm_id FROM ways_vertices_pgr, posicao_user ORDER BY ST_Distance(ways_vertices_pgr.the_geom, posicao_user.geom ) limit 1")
